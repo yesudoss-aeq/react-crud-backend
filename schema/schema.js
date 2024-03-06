@@ -6,6 +6,7 @@ const studentScema = mongoose.Schema({
   oss: String,
   python: String,
   cloudComputing: String,
+  author: { type: mongoose.Schema.Types.ObjectId, ref: "user" },
 });
 
 module.exports = mongoose.model("data", studentScema);

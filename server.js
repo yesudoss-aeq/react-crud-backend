@@ -3,7 +3,7 @@ const app = express();
 const cors = require("cors");
 const mongoose = require("mongoose");
 require("dotenv").config();
-const totalRouter = require("./route");
+const totalRouter = require("./routes/route");
 
 const port = process.env.PORT;
 const remoteDb = process.env.REMOTE_DB;
